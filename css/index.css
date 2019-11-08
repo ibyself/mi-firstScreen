@@ -1,4 +1,5 @@
-.topbar-wrapper{width:100%;background-color:#333;color: #000;#b0b0b0;line-height:40px;}
+/*topbar*/
+.topbar-wrapper{width:100%;background-color:#333;color: #000;line-height:40px;}
 .topbar a:hover{color:#fff;}
 .topbar li a{color:#b0b0b0;font-size:12px;display:block;}
 .topbar li,.topbar-nav{float:left;}
@@ -16,6 +17,7 @@
 .topbar .shop-cart:hover a{color:#ff6700;background-color:#fff;}
 .topbar .shop-cart:hover .cart-menu{height:100px;z-index:10;}
 .topbar .shop-cart .cart-menu {width:316px; height:0; box-shadow:0 0 10px rgba(0,0,0,.3); position:absolute; top:40px; right:0; transition:height .3s; overflow:hidden; text-align:center; line-height:100px;background-color:#fff;z-index:100;} 
+/*header*/
 .header-wrapper{position:relative;}
 .header .logo{position:relative;float:left;width:55px;height:55px;background-color:#ff6700;margin:22px 7px 0 0;overflow:hidden;text-indent:-9999px;}
 .header .logo:hover .home{left:0;}
@@ -25,7 +27,7 @@
 .header .header-nav > li{line-height:100px;}
 .header .header-nav{float:left;padding-left:58px;}
 .header .header-nav .goods-nav{position:relative;}
-.header .header-nav .all-goods-nav{position:absolute;width:234px;height:420px;right:0;padding:20px 0;background-color:rgba(0,0,0,.6);}
+.header .header-nav .all-goods-nav{position:absolute;width:234px;height:420px;right:2px;padding:20px 0;background-color:rgba(0,0,0,.6);z-index:10;}
 .header .header-nav .all-goods-nav:hover .all-goods-list{display:block;}
 .header .header-nav .all-goods-nav li{width:204px;height:42px;padding-left:30px;line-height:42px;color:#fff;}
 .header .header-nav .all-goods-nav li:hover{background-color:#ff6700;}
@@ -47,18 +49,59 @@
 .header .search-wrapper:hover .search,.header .search-wrapper:hover .btn{border-color:#B0B0B0;}
 .header .search-wrapper .btn:hover{background-color:#ff6700;}
 .header .search-wrapper .btn:hover i{color:#fff;}
-.header .search-wrapper .search-list{position:absolute;top:50px;width:242px;height:300px;border:1px solid #ccc;border-top:none;display:none;background-color:#fff;}
+.header .search-wrapper .search-list{position:absolute;top:50px;width:242px;height:300px;border:1px solid #ccc;border-top:none;display:none;background-color:#fff;z-index:40;}
 .header .search-wrapper .search:focus,.header .search-wrapper .search:focus ~ .btn,.header .search-wrapper .search:focus ~ .search-list {border-color:#ff6700;display:block;}
 .header .search-wrapper .search-goods{position:absolute;left:50px;top:50%;width:190px;margin-top:-8px;}
 .header .search-wrapper .search-goods a{float:left;background-color:#eee;margin-right:8px;padding:1px 2px;}
 .header .search-wrapper .search-goods a:hover{color:#fff;background-color:#ff6700;}
 
+/*banner*/
+.banner{position:relative;height:460px;}
+.banner .banner-list li{position:absolute;height:100%;}
+.banner .banner-list li a{display:block;height:100%;}
+.banner .banner-list img{width:100%;vertical-align:top;}
+.banner .pointer{height:12px;width:82px;position:absolute;right:36px;bottom:26px;}
+.banner .pointer a{float:left;width:6px;height:6px;background-color:rgba(0,0,0,.4);border-radius:50%;border:2px solid rgba(255,255,255,.4);margin-left:8px;}
+.banner .pointer a:first-child{margin:0;}
+.banner .pointer a:hover,.banner .pointer a.active{background-color:rgba(255,255,255,.4);border-color:rgba(0,0,0,.4);}
 
+.banner .prev-next a{position:absolute;top:0;bottom:0;margin:auto 0;background:url(../img/icon-slides.png) no-repeat;width:42px;height:68px;}
+.banner .prev-next .next{right:-1px;background-position:-120px 0;}
+.banner .prev-next .prev{left:234px;background-position:-87px 0;}
+.banner .prev-next .next:hover{background-position:-42px 0;}
+.banner .prev-next .prev:hover{background-position:0;}
+/*right-nav*/
+.right-nav {position:fixed;width:26px;height:206px;right:50%;bottom:60px;margin-right:-639px;text-align:center;}
+.right-nav .nav-wrapper{position:relative;}
+.right-nav a{display:block;border:1px solid #f5f5f5;padding:10px 0;border-left:none;}
+.right-nav i{color:#999;font-size:16px;}
+.right-nav a:hover i{color:#ff6700;}
+.right-nav .nav-wrapper div{height:30px;background-color:#fff;padding:0 10px;text-align:center;line-height:30px;position:relative;border: 1px solid #f5f5f5;}
+.right-nav .nav-wrapper div::after{content:"";display:block;position:absolute;right:-6px;top:8px;width:0;height:0;border:6px solid transparent;border-right:none;border-left-color:#f5f5f5;;}
+.right-nav a .sweepCode{position:absolute;left:-145px;height:164px;padding:14px;top:0;display:none;}
+.right-nav a .sweepCode img{height:100px;display:block;}
+.right-nav a .sweepCode span{width:70px;display:block;padding-left:15px;}
 
+.right-nav a .user-info{position:absolute;top:50px;left:-89px;display:none;}
+.right-nav a .afterSale{position:absolute;top:92px;left:-89px;display:none;}
+.right-nav a .artificial{position:absolute;top:140px;left:-89px;display:none;}
+.right-nav a .shopCart{position:absolute;top:180px;left:-111px;display:none;}
+.right-nav .nav-wrapper a.n1:hover .sweepCode,.right-nav .nav-wrapper a.n2:hover .user-info,.right-nav .nav-wrapper a.n3:hover .afterSale,.right-nav .nav-wrapper a.n4:hover .artificial,.right-nav .nav-wrapper a.n5:hover .shopCart{display:block;}
 
+/*advert*/
+.advert{margin-top:14px;}
+.advert li{float:left;}
+.advert .ad-list{height:166px;width:230px;float:left;margin-right:14px;background-color:#5f5750;padding:2px;}
+.advert .ad-list li{height:64px;width:61px;text-align:center;padding:20px 0 0 15px;position:relative;}
+.advert .ad-list li::before{ content:""; display:block; position:absolute; height:1px; width:64px; left:0; right:0; margin:0 auto; top:0; background-color:#665e57; }
+.advert .ad-list li::after{content:"";display:block;position:absolute;width:1px;height:70px;top:0;bottom:0;left:0;margin:auto 0;background-color:#665e57;}
+.advert .ad-list li:hover a,.advert .ad-list li:hover i{color:#ebe7e4;}
 
-
-
-
+.advert .ad-list i{display:block;font-size:22px;margin-bottom:10px;}
+.advert .ad-list a{display:block;height:100%;color:#cfccca;font-size:12px;}
+.advert .ad-img{float:left;height:170px;}
+.advert .ad-img li {width:316px;margin-right:15px;} 
+.advert .ad-img li:last-child{margin:0;}
+.advert .ad-img li img{height:170px;}
 
 
